@@ -1,0 +1,10 @@
+{
+    "message": {
+        "attributes": {
+            "key": "value"
+        },
+        "data": "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj0wLUpHZXM0X0kxMA==",
+        "messageId": "136969346945"
+    },
+   "subscription": "projects/myproject/subscriptions/mysubscription"
+}

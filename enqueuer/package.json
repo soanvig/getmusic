@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "ENV=development functions-framework --target=enqueuer",
+    "deploy": "gcloud --project getmusic-302718 functions deploy enqueuer --region europe-west3 --entry-point enqueuer --runtime nodejs14 --trigger-http --allow-unauthenticated"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.7.1"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.8.0"
+  }
+}
