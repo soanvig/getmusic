@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "deploy": "gsutil rsync -R . gs://getmusic-gui"
+  }
+}
