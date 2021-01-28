@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "ENV=development functions-framework --target=reporter",
+    "deploy": "bash -c 'source ./deploy.env && gcloud --project getmusic-302718 functions deploy reporter --region europe-west3 --entry-point reporter --runtime nodejs14 --trigger-topic not-downloaded --max-instances 100 --set-env-vars SENDGRID_API_KEY=$SENDGRID_API_KEY'"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.7.1",
+    "dotenv": "^8.2.0"
+  }
+}
