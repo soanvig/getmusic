@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "serve .",
     "deploy": "gsutil rsync -R . gs://getmusic-gui"
   }
 }
